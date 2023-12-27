@@ -2,23 +2,23 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Product = void 0;
 class Product {
-    title;
-    price;
+    _title;
+    _price;
     constructor(title, price) {
-        this.title = title;
-        this.price = price;
+        this._title = title;
+        this._price = price;
     }
-    get getTitle() {
-        return this.title;
+    get title() {
+        return this._title;
     }
-    set setTitle(title) {
-        this.title = title;
+    set title(title) {
+        this._title = title;
     }
-    get getPrice() {
-        return this.price;
+    get price() {
+        return this._price;
     }
-    set setPrice(price) {
-        this.price = price;
+    set price(price) {
+        this._price = price;
     }
 }
 exports.Product = Product;
